@@ -20,7 +20,7 @@ const currentUserQuery = `
       lastName
       displayName
       email
-      artisan
+      admin
     }
   }
 `;
@@ -42,7 +42,7 @@ describe("Current User 👓", () => {
           lastName: user.lastName,
           displayName: `${user.firstName} ${user.lastName}`,
           email: user.email,
-          artisan: false,
+          admin: false,
         },
       },
     });

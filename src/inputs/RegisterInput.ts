@@ -23,5 +23,5 @@ export class RegisterInput extends PasswordInput {
   email: string;
 
   @Field({ nullable: true })
-  artisan: boolean;
+  admin: boolean;
 }

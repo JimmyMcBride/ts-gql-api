@@ -30,7 +30,7 @@ export class Profile extends BaseEntity {
 
   @Field()
   @Column("bool", { default: false })
-  artisan: boolean;
+  admin: boolean;
 
   @Column("bool", { default: false })
   confirmed: boolean;

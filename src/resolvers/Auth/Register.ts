@@ -26,7 +26,7 @@ export class RegisterResolver {
   @Mutation(() => Profile)
   async register(
     @Arg("data")
-    { email, firstName, lastName, password, artisan }: RegisterInput,
+    { email, firstName, lastName, password, admin }: RegisterInput,
     @Ctx() ctx: ExpressContext
   ): Promise<Profile> {
     const hashedPassword = await bcrypt.hash(password, 12);
@@ -36,7 +36,7 @@ export class RegisterResolver {
       lastName,
       email,
       password: hashedPassword,
-      artisan,
+      admin,
     }).save();
 
     setSession(ctx, profile);

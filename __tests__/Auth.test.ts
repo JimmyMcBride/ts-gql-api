@@ -21,7 +21,7 @@ const registerMutation = `
       lastName
       displayName
       email
-      artisan
+      admin
     }
   }
 `;

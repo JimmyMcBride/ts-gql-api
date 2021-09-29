@@ -6,7 +6,7 @@ interface FakeUserObject {
   displayName?: string;
   email: string;
   password: string;
-  artisan?: boolean;
+  admin?: boolean;
 }
 
 export const fakeUser: FakeUserObject = {
@@ -14,5 +14,5 @@ export const fakeUser: FakeUserObject = {
   lastName: faker.name.lastName(),
   email: faker.internet.email(),
   password: faker.internet.password(),
-  artisan: false,
+  admin: false,
 };
